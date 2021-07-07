@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<div class="container">
+<div class="card">
+  <div class="card-header">
+   Friend Detail
+  </div>
+  <div class="card-body">
+    <h5 class="card-title"> <%= @friendlist.first_name %>   <%= @friendlist.last_name %></h5>
+    
+    <p class="card-text"> Email: <%= @friendlist.email %></p>
+      <p class="card-text"> Phone : <%= @friendlist.phone %></p>
+        <p class="card-text"> Twitter : <%= @friendlist.twitter %></p>
+    <%= link_to 'Edit', edit_friendlist_path(@friendlist) ,class:"btn btn-dark" %> 
+<%= link_to 'Back', friendlists_path ,class:"btn btn-dark" %>
+  </div>
+  
+
+
+</div>
+</div>
+
+
+
+
+
+
+
